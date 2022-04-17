@@ -9,7 +9,6 @@
     <title>Counter </title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 <body>
     
@@ -20,6 +19,8 @@
    
 
 </body>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 <script type="text/babel">
 
@@ -39,6 +40,8 @@ class Counter extends React.Component {
       )
   }
 }
+
+ReactDOM.render(<Counter/> , document.getElementById('root'))
 
 </script>
 </html>
